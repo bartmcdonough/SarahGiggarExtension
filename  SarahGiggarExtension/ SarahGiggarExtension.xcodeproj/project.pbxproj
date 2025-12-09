@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		5723BFB22EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "# WebExtension builds extension-dist/ SarahGiggarExtension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5723BFC42EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "# WebExtension builds extension-dist/ SarahGiggarExtension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarahGiggarExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5723BFCF2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = " SarahGiggarExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5723BFD92EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = " SarahGiggarExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				5723BFB22EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */,
-				5723BFC42EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */,
+				5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */,
 				5723BFCF2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */,
 				5723BFD92EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */,
 			);
@@ -296,7 +296,7 @@
 			packageProductDependencies = (
 			);
 			productName = " SarahGiggarExtension (macOS)";
-			productReference = 5723BFC42EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */;
+			productReference = 5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5723BFCE2EE7669C00E8D69B /*  SarahGiggarExtension Extension (iOS) */ = {
@@ -544,7 +544,7 @@
 				DEVELOPMENT_TEAM = NZF8AKC884;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension";
+				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -585,7 +585,7 @@
 				DEVELOPMENT_TEAM = NZF8AKC884;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension";
+				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -702,7 +702,7 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension";
+				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -718,7 +718,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension";
-				PRODUCT_NAME = "# WebExtension builds extension-dist/ SarahGiggarExtension";
+				PRODUCT_NAME = SarahGiggarExtension;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -743,7 +743,7 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension";
+				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -759,7 +759,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension";
-				PRODUCT_NAME = "# WebExtension builds extension-dist/ SarahGiggarExtension";
+				PRODUCT_NAME = SarahGiggarExtension;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

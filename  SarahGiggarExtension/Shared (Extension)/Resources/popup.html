@@ -2,14 +2,53 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Save to Wardrobe</title>
   <link rel="stylesheet" href="popup.css" />
   <script type="module" src="popup.js"></script>
 </head>
 <body>
-  <div id="root">
-    <button id="saveButton">Save this page to Sarah’s Wardrobe</button>
-    <p id="message"></p>
+  <div class="sg-popup">
+    
+    <header class="sg-header">
+      <div class="sg-monogram">SG</div>
+      <div>
+        <h1 class="sg-title">SarahGiggar.com</h1>
+        <p class="sg-subtitle">Add this piece to your curated library.</p>
+      </div>
+    </header>
+
+    <div id="loginView" class="sg-panel sg-panel--stacked sg-hidden">
+      <input
+        id="emailInput"
+        class="sg-input"
+        type="email"
+        placeholder="Email"
+      />
+      <input
+        id="passwordInput"
+        class="sg-input"
+        type="password"
+        placeholder="Password"
+      />
+      <button id="loginButton" class="sg-btn sg-btn-primary">
+        Sign in
+      </button>
+    </div>
+
+    <div id="saveView" class="sg-panel">
+      
+      <div id="previewContainer" class="sg-preview sg-hidden">
+        <img id="productPreview" src="" alt="Product Preview" />
+        <div class="sg-preview-meta">
+          <span id="productDomain" class="sg-domain-tag">net-a-porter.com</span>
+        </div>
+      </div>
+
+      <button id="saveButton" class="sg-btn sg-btn-primary">
+        Save wardrobe item
+      </button>
+    </div>
+
+    <p id="message" class="sg-message"></p>
   </div>
 </body>
 </html>
