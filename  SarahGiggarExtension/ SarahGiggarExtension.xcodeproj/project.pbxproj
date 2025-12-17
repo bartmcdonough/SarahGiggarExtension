@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5723BFD02EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFCF2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5723BFDA2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFD92EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5723BFD02EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5723BFDA2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5723BFD02EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex in Embed Foundation Extensions */,
+				5723BFD02EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5723BFDA2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex in Embed Foundation Extensions */,
+				5723BFDA2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,10 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5723BFB22EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "# WebExtension builds extension-dist/ SarahGiggarExtension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BFB22EE7669C00E8D69B /* SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarahGiggarExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarahGiggarExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5723BFCF2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = " SarahGiggarExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5723BFD92EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = " SarahGiggarExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SarahGiggarExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SarahGiggarExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -109,7 +109,6 @@
 		5723C0102EE7669C00E8D69B /* Exceptions for "Shared (Extension)" folder in " SarahGiggarExtension Extension (iOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Resources/_locales,
 				Resources/background.js,
 				Resources/content.js,
 				Resources/images,
@@ -124,7 +123,6 @@
 		5723C0112EE7669C00E8D69B /* Exceptions for "Shared (Extension)" folder in " SarahGiggarExtension Extension (macOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Resources/_locales,
 				Resources/background.js,
 				Resources/content.js,
 				Resources/images,
@@ -136,6 +134,20 @@
 			);
 			target = 5723BFD82EE7669C00E8D69B /*  SarahGiggarExtension Extension (macOS) */;
 		};
+		57E5721D2EF0CDBE003552CB /* Exceptions for "Shared (App)" folder in " SarahGiggarExtension Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Icon.png,
+			);
+			target = 5723BFCE2EE7669C00E8D69B /*  SarahGiggarExtension Extension (iOS) */;
+		};
+		57E5721E2EF0CDBE003552CB /* Exceptions for "Shared (App)" folder in " SarahGiggarExtension Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Icon.png,
+			);
+			target = 5723BFD82EE7669C00E8D69B /*  SarahGiggarExtension Extension (macOS) */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -144,6 +156,8 @@
 			exceptions = (
 				5723BFFD2EE7669C00E8D69B /* Exceptions for "Shared (App)" folder in " SarahGiggarExtension (iOS)" target */,
 				5723C0072EE7669C00E8D69B /* Exceptions for "Shared (App)" folder in " SarahGiggarExtension (macOS)" target */,
+				57E5721D2EF0CDBE003552CB /* Exceptions for "Shared (App)" folder in " SarahGiggarExtension Extension (iOS)" target */,
+				57E5721E2EF0CDBE003552CB /* Exceptions for "Shared (App)" folder in " SarahGiggarExtension Extension (macOS)" target */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
@@ -155,7 +169,6 @@
 				5723C0112EE7669C00E8D69B /* Exceptions for "Shared (Extension)" folder in " SarahGiggarExtension Extension (macOS)" target */,
 			);
 			explicitFolders = (
-				Resources/_locales,
 				Resources/images,
 			);
 			path = "Shared (Extension)";
@@ -240,10 +253,10 @@
 		5723BFB32EE7669C00E8D69B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5723BFB22EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */,
+				5723BFB22EE7669C00E8D69B /* SarahGiggarExtension.app */,
 				5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */,
-				5723BFCF2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */,
-				5723BFD92EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */,
+				5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */,
+				5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,7 +285,7 @@
 			packageProductDependencies = (
 			);
 			productName = " SarahGiggarExtension (iOS)";
-			productReference = 5723BFB22EE7669C00E8D69B /* # WebExtension builds extension-dist/ SarahGiggarExtension.app */;
+			productReference = 5723BFB22EE7669C00E8D69B /* SarahGiggarExtension.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5723BFC32EE7669C00E8D69B /*  SarahGiggarExtension (macOS) */ = {
@@ -318,7 +331,7 @@
 			packageProductDependencies = (
 			);
 			productName = " SarahGiggarExtension Extension (iOS)";
-			productReference = 5723BFCF2EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */;
+			productReference = 5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		5723BFD82EE7669C00E8D69B /*  SarahGiggarExtension Extension (macOS) */ = {
@@ -340,7 +353,7 @@
 			packageProductDependencies = (
 			);
 			productName = " SarahGiggarExtension Extension (macOS)";
-			productReference = 5723BFD92EE7669C00E8D69B /*  SarahGiggarExtension Extension.appex */;
+			productReference = 5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -351,7 +364,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					5723BFB12EE7669C00E8D69B = {
 						CreatedOnToolsVersion = 26.1.1;
@@ -468,12 +481,13 @@
 		5723BFFF2EE7669C00E8D69B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "SarahGiggarExtension Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,13 +495,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension.Extension";
-				PRODUCT_NAME = " SarahGiggarExtension Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension.iOSExtension;
+				PRODUCT_NAME = SarahGiggarExtensionExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -502,12 +517,13 @@
 		5723C0002EE7669C00E8D69B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "SarahGiggarExtension Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,13 +531,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension.Extension";
-				PRODUCT_NAME = " SarahGiggarExtension Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension.iOSExtension;
+				PRODUCT_NAME = SarahGiggarExtensionExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -539,32 +556,37 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_PATH = /Applications;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension";
-				PRODUCT_NAME = "# WebExtension builds extension-dist/ SarahGiggarExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension;
+				PRODUCT_NAME = SarahGiggarExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -580,32 +602,37 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_PATH = /Applications;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension";
-				PRODUCT_NAME = "# WebExtension builds extension-dist/ SarahGiggarExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension;
+				PRODUCT_NAME = SarahGiggarExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -621,28 +648,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "SarahGiggarExtension Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension.Extension";
-				PRODUCT_NAME = " SarahGiggarExtension Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension.Extension;
+				PRODUCT_NAME = SarahGiggarExtensionExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -657,28 +685,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = " SarahGiggarExtension Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "SarahGiggarExtension Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension.Extension";
-				PRODUCT_NAME = " SarahGiggarExtension Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension.Extension;
+				PRODUCT_NAME = SarahGiggarExtensionExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -694,22 +723,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -717,7 +749,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension;
 				PRODUCT_NAME = SarahGiggarExtension;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
@@ -736,21 +768,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NZF8AKC884;
+				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = T27AK85XXP;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -758,7 +792,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension;
 				PRODUCT_NAME = SarahGiggarExtension;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
@@ -805,6 +839,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = NZF8AKC884;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -828,6 +863,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -867,6 +903,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = NZF8AKC884;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -883,6 +920,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;

@@ -16,7 +16,8 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "com-bartmcd.--WebExtension-builds-extension-dist--SarahGiggarExtension.Extension"
+// This MUST match the Bundle Identifier of your *Extension* target (not the app)
+let extensionBundleIdentifier = "com.CertSolutions.SarahGiggarExtension.Extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
@@ -65,14 +66,16 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
             return
         }
 
+        // The "Safe" Handler: Logs errors to console so you can debug rejections
         SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
-            guard error == nil else {
-                // Insert code to inform the user that something went wrong.
-                return
-            }
-
-            DispatchQueue.main.async {
-                NSApp.terminate(self)
+            if let error = error {
+                // If the button fails, this will print the exact reason in Xcode
+                print("Error launching preferences: \(error)")
+            } else {
+                // Success: Close the app so the user focuses on the Settings window
+                DispatchQueue.main.async {
+                    NSApp.terminate(self)
+                }
             }
         }
 #endif

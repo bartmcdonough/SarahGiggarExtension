@@ -1,161 +1,159 @@
 :root {
-  --bg-color: #fcf6f2;       /* Warm cream */
+  --bg-color: #fcf6f2;
   --text-primary: #2c2423;
   --text-secondary: #8c7f76;
-  --accent-color: #7e3e46;   /* Deep wine */
+  --accent-color: #7e3e46;
   --accent-hover: #663238;
   --border-subtle: #e8ded6;
   --white: #ffffff;
 }
 
-/* Base body */
-body {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
-  color: var(--text-primary);
-  width: 310px; /* Slightly wider for better image framing */
+/* --- 1. GLOBAL RESET (Default = Desktop) --- */
+html, body {
+    margin: 0;
+    padding: 0;
+    
+    /* DESKTOP DEFAULT: Fixed width for Mac */
+    width: 450px;
+    height: auto; /* Let content dictate height on Mac */
+    min-height: 400px; /* Minimum nice size */
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
+    color: var(--text-primary);
+    
+    /* Prevent scrolling on Mac */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-/* Card container */
+/* --- 2. CARD STYLING --- */
 .sg-popup {
-  padding: 24px 20px 24px;
-  background: var(--bg-color);
-  border-radius: 16px;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.03);
+    background: var(--bg-color);
+    padding: 24px;
+    
+    /* Ensure it fills the body */
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* --- 3. HEADER & TYPOGRAPHY --- */
 .sg-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
 .sg-monogram {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--white);
-  border: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Georgia", serif;
-  font-size: 20px;
-  color: var(--accent-color);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Georgia", serif;
+    font-size: 22px;
+    color: var(--accent-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .sg-title {
-  font-family: "Georgia", serif;
-  font-size: 17px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  margin: 0 0 6px 0;
-  color: var(--text-primary);
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text-primary);
 }
 
 .sg-subtitle {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.4;
-  color: var(--text-secondary);
-  max-width: 220px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 4px 0 0 0;
+    line-height: 1.4;
 }
 
-/* Panels & Visibility */
-.sg-panel { width: 100%; }
-.sg-panel--stacked { display: flex; flex-direction: column; gap: 10px; }
-.sg-hidden { display: none !important; }
-
-/* NEW: Image Preview Styling */
+/* --- 4. PREVIEW SECTION --- */
 .sg-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 16px;
-  background: var(--white);
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: var(--white);
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border-subtle);
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .sg-preview img {
-  width: 100px;  /* Fixed size for consistency */
-  height: 100px;
-  object-fit: contain; /* Ensures the whole product is visible */
-  border-radius: 4px;
-  margin-bottom: 8px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
 }
 
-.sg-domain-tag {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #b0a49d;
-  font-weight: 600;
-}
-
-/* Inputs */
-.sg-input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid var(--border-subtle);
-  background: var(--white);
-  font-size: 14px;
-  color: var(--text-primary);
-}
-
-.sg-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-/* Buttons */
+/* --- 5. BUTTONS --- */
 .sg-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 8px;
-  padding: 11px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-sizing: border-box;
 }
 
 .sg-btn-primary {
-  background: var(--accent-color);
-  color: var(--white);
-  box-shadow: 0 4px 12px rgba(126, 62, 70, 0.2);
+    background: var(--accent-color);
+    color: var(--white);
 }
 
 .sg-btn-primary:hover {
-  background: var(--accent-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(126, 62, 70, 0.3);
+    background: var(--accent-hover);
 }
 
-.sg-btn-primary:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(126, 62, 70, 0.2);
+.sg-hidden {
+    display: none !important;
 }
 
-/* Message Status */
 .sg-message {
-  margin-top: 12px;
-  font-size: 11px;
-  text-align: center;
-  color: var(--text-secondary);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 15px;
+}
+
+/* --- 6. MOBILE OVERRIDE (iPhone Only) --- */
+/* We check DEVICE width (screen size), not window width */
+@media screen and (max-device-width: 600px) {
+    html, body {
+        /* On iPhone, let the width be fluid */
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100vw !important;
+        
+        /* Reset heights for mobile scroll */
+        height: auto;
+        min-height: auto;
+    }
+    
+    .sg-popup {
+        width: 100% !important;
+        padding: 20px 16px;
+        min-height: auto; /* Let iOS handle the sheet height */
+    }
 }
