@@ -16,7 +16,7 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-// This MUST match the Bundle Identifier of your *Extension* target (not the app)
+// Ensure this matches your EXTENSION target's ID
 let extensionBundleIdentifier = "com.CertSolutions.SarahGiggarExtension.Extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
@@ -34,6 +34,23 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 
         self.webView.configuration.userContentController.add(self, name: "controller")
 
+        // --- NAME INJECTION FIX ---
+        // 1. Get the nice display name (e.g. "Sarah's Wardrobe")
+        let displayName = (Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String)
+            ?? (Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String)
+            ?? "Sarah's Wardrobe"
+        
+        // 2. Escape it safely for JavaScript
+        let escaped = displayName
+            .replacingOccurrences(of: "\\", with: "\\\\")
+            .replacingOccurrences(of: "\"", with: "\\\"")
+        
+        // 3. Inject it BEFORE the page loads
+        let scriptSource = "window.APP_DISPLAY_NAME = \"\(escaped)\";"
+        let userScript = WKUserScript(source: scriptSource, injectionTime: .atDocumentStart, forMainFrameOnly: true)
+        self.webView.configuration.userContentController.addUserScript(userScript)
+        // --------------------------
+
         self.webView.loadFileURL(Bundle.main.url(forResource: "Main", withExtension: "html")!, allowingReadAccessTo: Bundle.main.resourceURL!)
     }
 
@@ -45,7 +62,6 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 
         SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
             guard let state = state, error == nil else {
-                // Insert code to inform the user that something went wrong.
                 return
             }
 
@@ -66,19 +82,15 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
             return
         }
 
-        // The "Safe" Handler: Logs errors to console so you can debug rejections
         SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
             if let error = error {
-                // If the button fails, this will print the exact reason in Xcode
                 print("Error launching preferences: \(error)")
             } else {
-                // Success: Close the app so the user focuses on the Settings window
                 DispatchQueue.main.async {
                     NSApp.terminate(self)
                 }
             }
         }
 #endif
-    }
-
+    } // Corrected closing brace location
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5723BFD02EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5723BFD02EE7669C00E8D69B /* SarahGiggarExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFCF2EE7669C00E8D69B /* SarahGiggarExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5723BFDA2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5723BFD02EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex in Embed Foundation Extensions */,
+				5723BFD02EE7669C00E8D69B /* SarahGiggarExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,9 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5723BFB22EE7669C00E8D69B /* SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarahGiggarExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BFB22EE7669C00E8D69B /* Sarah's Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sarah's Wardrobe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarahGiggarExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SarahGiggarExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BFCF2EE7669C00E8D69B /* SarahGiggarExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SarahGiggarExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SarahGiggarExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -253,9 +253,9 @@
 		5723BFB32EE7669C00E8D69B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5723BFB22EE7669C00E8D69B /* SarahGiggarExtension.app */,
+				5723BFB22EE7669C00E8D69B /* Sarah's Wardrobe.app */,
 				5723BFC42EE7669C00E8D69B /* SarahGiggarExtension.app */,
-				5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */,
+				5723BFCF2EE7669C00E8D69B /* SarahGiggarExtension.appex */,
 				5723BFD92EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */,
 			);
 			name = Products;
@@ -285,7 +285,7 @@
 			packageProductDependencies = (
 			);
 			productName = " SarahGiggarExtension (iOS)";
-			productReference = 5723BFB22EE7669C00E8D69B /* SarahGiggarExtension.app */;
+			productReference = 5723BFB22EE7669C00E8D69B /* Sarah's Wardrobe.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5723BFC32EE7669C00E8D69B /*  SarahGiggarExtension (macOS) */ = {
@@ -331,7 +331,7 @@
 			packageProductDependencies = (
 			);
 			productName = " SarahGiggarExtension Extension (iOS)";
-			productReference = 5723BFCF2EE7669C00E8D69B /* SarahGiggarExtensionExtension.appex */;
+			productReference = 5723BFCF2EE7669C00E8D69B /* SarahGiggarExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		5723BFD82EE7669C00E8D69B /*  SarahGiggarExtension Extension (macOS) */ = {
@@ -483,11 +483,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "SarahGiggarExtension Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sarah's Wardrobe";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,7 +501,8 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension.iOSExtension;
-				PRODUCT_NAME = SarahGiggarExtensionExtension;
+				PRODUCT_MODULE_NAME = SarahGiggarExtensionExtension;
+				PRODUCT_NAME = SarahGiggarExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -519,11 +520,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "SarahGiggarExtension Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sarah's Wardrobe";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,7 +538,8 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension.iOSExtension;
-				PRODUCT_NAME = SarahGiggarExtensionExtension;
+				PRODUCT_MODULE_NAME = SarahGiggarExtensionExtension;
+				PRODUCT_NAME = SarahGiggarExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -558,11 +560,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sarah's Wardrobe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -583,7 +585,8 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension;
-				PRODUCT_NAME = SarahGiggarExtension;
+				PRODUCT_MODULE_NAME = SarahGiggarExtension;
+				PRODUCT_NAME = "Sarah's Wardrobe";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -604,11 +607,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = T27AK85XXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = SarahGiggarExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sarah's Wardrobe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -629,7 +632,8 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CertSolutions.SarahGiggarExtension;
-				PRODUCT_NAME = SarahGiggarExtension;
+				PRODUCT_MODULE_NAME = SarahGiggarExtension;
+				PRODUCT_NAME = "Sarah's Wardrobe";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
